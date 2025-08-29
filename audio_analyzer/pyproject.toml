@@ -1,0 +1,31 @@
+[project]
+name = "audio-analyzer"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Saad-Azi",email = "sunnyaziz120@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "fastapi (>=0.116.1,<0.117.0)",
+    "aiofiles (>=24.1.0,<25.0.0)",
+    "python-dotenv (>=1.1.1,<2.0.0)",
+    "langchain (>=0.3.27,<0.4.0)",
+    "langchain-community (>=0.3.29,<0.4.0)",
+    "anyio (>=4.10.0,<5.0.0)",
+    "uvicorn (>=0.35.0,<0.36.0)",
+    "langchain-openai (>=0.3.32,<0.4.0)",
+    "crewai (>=0.175.0,<0.176.0)",
+    "python-multipart (>=0.0.20,<0.0.21)",
+    "pydub (>=0.25.1,<0.26.0)",
+    "ffmpeg-python (>=0.2.0,<0.3.0)",
+]
+
+[tool.poetry]
+packages = [{include = "audio_analyzer", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
